@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "vite ./dev",
     "test": "cm-runtests",
-    "build": "cm-buildhelper src/index.ts",
-    "prepublishOnly": "npm run build"
+    "build": "bin/build.js",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
   },
   "keywords": [
     "editor",
@@ -35,6 +36,7 @@
     "@codemirror/language": "^6.1.0",
     "@codemirror/lang-javascript": "^6.0.0",
     "@codemirror/lang-xml": "^6.0.0",
+    "@marijn/buildtool": "^0.1.2",
     "vite": "^2.3.8"
   },
   "repository": {
