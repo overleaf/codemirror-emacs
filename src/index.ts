@@ -122,7 +122,7 @@ var specialKey: Record<string, string> = {
 var ignoredKeys: any = { Shift: 1, Alt: 1, Command: 1, Control: 1, CapsLock: 1 };
 
 const commandKeyBinding: Record<string, any> = {}
-class EmacsHandler {
+export class EmacsHandler {
   static bindKey(keyGroup: string, command: any) {
     keyGroup.split("|").forEach(function (binding) {
       let chain = "";
