@@ -117,12 +117,13 @@ var specialKey: Record<string, string> = {
   Return: 'Return', Escape: 'Esc', Insert: 'Ins',
   ArrowLeft: 'Left', ArrowRight: 'Right', ArrowUp: 'Up', ArrowDown: 'Down',
   Enter: 'Return', Divide: '/', Slash: '/', Multiply: '*',
-  Subtract: '-', Minus: "-", Equal: '=',
+  Subtract: '-', Minus: "-", Equal: '=', Semicolon: ';', Comma: ',',
+  Period: '.',
 };
 var ignoredKeys: any = { Shift: 1, Alt: 1, Command: 1, Control: 1, CapsLock: 1 };
 
 const commandKeyBinding: Record<string, any> = {}
-class EmacsHandler {
+export class EmacsHandler {
   static bindKey(keyGroup: string, command: any) {
     keyGroup.split("|").forEach(function (binding) {
       let chain = "";
