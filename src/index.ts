@@ -734,10 +734,14 @@ EmacsHandler.addCommands({
     },
   },
   killLine: {
-    exec: function (handler: EmacsHandler) {
+    exec: function (handler: EmacsHandler, selectionCommand?: (view: EditorView) => any) {
       handler.pushEmacsMark(null);
       // don't delete the selection if it's before the cursor
       handler.clearSelection();
+      if (selectionCommand) {
+        selectionCommand(handler.view);
+      }
+
       var view = handler.view;
       var state = view.state
 
