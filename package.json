@@ -24,23 +24,24 @@
   "sideEffects": false,
   "license": "MIT",
   "peerDependencies": {
-    "@codemirror/state": "^6.0.1",
-    "@codemirror/view": "^6.3.0",
-    "@codemirror/commands": "^6.0.0",
     "@codemirror/autocomplete": "^6.0.2",
-    "@codemirror/search": "^6.0.0"
+    "@codemirror/commands": "^6.0.0",
+    "@codemirror/search": "^6.0.0",
+    "@codemirror/state": "^6.0.1",
+    "@codemirror/view": "^6.3.0"
   },
   "devDependencies": {
-    "codemirror": "6.0.0",
     "@codemirror/buildhelper": "^0.1.16",
-    "@codemirror/language": "^6.1.0",
     "@codemirror/lang-javascript": "^6.0.0",
     "@codemirror/lang-xml": "^6.0.0",
+    "@codemirror/language": "^6.1.0",
     "@marijn/buildtool": "^0.1.2",
+    "codemirror": "6.0.0",
     "vite": "^2.3.8"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/replit/codemirror-emacs.git"
-  }
+  },
+  "packageManager": "yarn@4.14.1"
 }
